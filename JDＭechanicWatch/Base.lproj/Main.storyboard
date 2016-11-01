@@ -1,5 +1,5 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="16A323" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="11201" systemVersion="15G31" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="11161"/>
@@ -30,26 +30,50 @@
                                     <constraint firstAttribute="width" secondItem="PoI-8q-B0u" secondAttribute="height" multiplier="1:1" id="llj-2o-T08"/>
                                 </constraints>
                             </view>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="s13-q9-PVE">
-                                <frame key="frameInset" minX="164" minY="593" width="46" height="30"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="3De-ZD-0jW">
+                                <state key="normal" title="Start"/>
                                 <connections>
-                                    <action selector="rotate:" destination="BYZ-38-t0r" eventType="touchUpInside" id="suU-Gy-ese"/>
+                                    <action selector="startButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="52q-IL-xI7"/>
                                 </connections>
                             </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ds7-ae-Yeb">
+                                <state key="normal" title="Pause"/>
+                                <connections>
+                                    <action selector="stopButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="ypV-V8-GhK"/>
+                                </connections>
+                            </button>
+                            <datePicker contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" datePickerMode="time" minuteInterval="1" translatesAutoresizingMaskIntoConstraints="NO" id="Cpy-y2-XVC">
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="xCf-as-iMl"/>
+                                </constraints>
+                                <date key="date" timeIntervalSinceReferenceDate="499685096.08746302">
+                                    <!--2016-11-01 09:24:56 +0000-->
+                                </date>
+                                <connections>
+                                    <action selector="pick_date:" destination="BYZ-38-t0r" eventType="valueChanged" id="cFJ-zc-ohr"/>
+                                </connections>
+                            </datePicker>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
                             <constraint firstItem="pgC-Ye-Zfp" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="0DM-Iv-zGM"/>
+                            <constraint firstItem="Ds7-ae-Yeb" firstAttribute="centerY" secondItem="3De-ZD-0jW" secondAttribute="centerY" id="0SO-2l-ugb"/>
+                            <constraint firstItem="3De-ZD-0jW" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.5" id="31a-5H-yXI"/>
                             <constraint firstItem="PoI-8q-B0u" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="0.95" id="6sb-Mm-aAo"/>
                             <constraint firstItem="PoI-8q-B0u" firstAttribute="width" secondItem="pgC-Ye-Zfp" secondAttribute="width" multiplier="0.73" id="DDk-bC-rEP"/>
+                            <constraint firstItem="3De-ZD-0jW" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="GBA-Rk-qPn"/>
+                            <constraint firstItem="Ds7-ae-Yeb" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="1.5" id="WoR-5h-5Rt"/>
+                            <constraint firstItem="3De-ZD-0jW" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" multiplier="1.9" id="bX7-NQ-rsg"/>
                             <constraint firstItem="pgC-Ye-Zfp" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="gZb-oY-jM0"/>
+                            <constraint firstItem="Cpy-y2-XVC" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="mGn-S9-dIL"/>
                             <constraint firstItem="pgC-Ye-Zfp" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="oz6-el-TKq"/>
                             <constraint firstItem="PoI-8q-B0u" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" multiplier="0.935" id="spB-fW-Oaf"/>
+                            <constraint firstItem="Ds7-ae-Yeb" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" multiplier="0.5" id="udc-6N-qHL"/>
+                            <constraint firstItem="Cpy-y2-XVC" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="-20" id="ulS-LS-ka4"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="timepicker" destination="Cpy-y2-XVC" id="8XP-kz-Ybk"/>
                         <outlet property="watchView" destination="PoI-8q-B0u" id="2mp-Sm-uka"/>
                     </connections>
                 </viewController>

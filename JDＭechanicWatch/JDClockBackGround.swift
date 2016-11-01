@@ -13,11 +13,16 @@ class JDClockBackGround: UIView {
     var Clockbgcolor: CGColor!
     var Clockdegreecolor:UIColor!
     
+    var linelength:CGFloat = 15
+    var linelength2:CGFloat = 10
+    
+
     init(frame:CGRect,bgcolor:UIColor,GraduationColor g:UIColor){
         super.init(frame: frame)
         self.backgroundColor = UIColor.clear
         Clockbgcolor = bgcolor.cgColor
         Clockdegreecolor = g
+        
     }
     
     required init?(coder aDecoder: NSCoder) {
@@ -34,11 +39,20 @@ class JDClockBackGround: UIView {
         let rad = rect.width/2.1
         let endAngle = CGFloat(2*M_PI)
         
+        if(self.superview?.superview != nil)
+        {
+            print("Sub  \(rect.width),\(self.superview?.superview?.frame.width)")
+            linelength *= rect.width/(self.superview?.superview?.frame.width)!
+            linelength2 *= rect.width/(self.superview?.superview?.frame.width)!
+        }
+        
+        
+       
         ctx?.addArc(center: CGPoint(x: rect.midX, y: rect.midY), radius: rad, startAngle: 0, endAngle: endAngle, clockwise: true)
         
         ctx?.setFillColor(Clockbgcolor)
         ctx?.setStrokeColor(UIColor.gray.cgColor)
-        ctx?.setLineWidth(4.0)
+        ctx?.setLineWidth(2.0)
         ctx?.drawPath(using: CGPathDrawingMode.fillStroke)
         
         for i in 1...60 {
@@ -52,10 +66,10 @@ class JDClockBackGround: UIView {
             
             if i % 5 == 0 {
                 // if an hour position we want a line slightly longer
-                drawSecondMarker(ctx: ctx!, x: rad-15, y:0, radius:rad, color: Clockdegreecolor)
+                drawSecondMarker(ctx: ctx!, x: rad-linelength, y:0, radius:rad, color: Clockdegreecolor)
             }
             else {
-                drawSecondMarker(ctx: ctx!, x: rad-10, y:0, radius:rad, color: Clockdegreecolor)
+                drawSecondMarker(ctx: ctx!, x: rad-linelength2, y:0, radius:rad, color: Clockdegreecolor)
             }
             // restore state before next translation
             ctx?.restoreGState()

@@ -109,12 +109,12 @@
 				4FB0BA131DC4E08300EFE98B /* ViewController.swift */,
 				4FB0BA3F1DC4EDC700EFE98B /* JDClockBackGround.swift */,
 				4FB0BA411DC4FAD700EFE98B /* JDMechanicWatch.swift */,
+				4F857F631DC78C36006A9186 /* JDTimeLogic.swift */,
 				4F857F611DC70DF6006A9186 /* JDWatchHand.swift */,
 				4FB0BA151DC4E08300EFE98B /* Main.storyboard */,
 				4FB0BA181DC4E08300EFE98B /* Assets.xcassets */,
 				4FB0BA1A1DC4E08300EFE98B /* LaunchScreen.storyboard */,
 				4FB0BA1D1DC4E08300EFE98B /* Info.plist */,
-				4F857F631DC78C36006A9186 /* JDTimeLogic.swift */,
 			);
 			path = "JDＭechanicWatch";
 			sourceTree = "<group>";
