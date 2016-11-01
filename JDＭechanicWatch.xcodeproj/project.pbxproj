@@ -1,0 +1,545 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		4F857F621DC70DF6006A9186 /* JDWatchHand.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F857F611DC70DF6006A9186 /* JDWatchHand.swift */; };
+		4F857F641DC78C36006A9186 /* JDTimeLogic.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4F857F631DC78C36006A9186 /* JDTimeLogic.swift */; };
+		4FB0BA121DC4E08300EFE98B /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0BA111DC4E08300EFE98B /* AppDelegate.swift */; };
+		4FB0BA141DC4E08300EFE98B /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0BA131DC4E08300EFE98B /* ViewController.swift */; };
+		4FB0BA171DC4E08300EFE98B /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB0BA151DC4E08300EFE98B /* Main.storyboard */; };
+		4FB0BA191DC4E08300EFE98B /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4FB0BA181DC4E08300EFE98B /* Assets.xcassets */; };
+		4FB0BA1C1DC4E08300EFE98B /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 4FB0BA1A1DC4E08300EFE98B /* LaunchScreen.storyboard */; };
+		4FB0BA271DC4E08300EFE98B /* JD_echanicWatchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0BA261DC4E08300EFE98B /* JD_echanicWatchTests.swift */; };
+		4FB0BA321DC4E08300EFE98B /* JD_echanicWatchUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0BA311DC4E08300EFE98B /* JD_echanicWatchUITests.swift */; };
+		4FB0BA401DC4EDC700EFE98B /* JDClockBackGround.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0BA3F1DC4EDC700EFE98B /* JDClockBackGround.swift */; };
+		4FB0BA421DC4FAD700EFE98B /* JDMechanicWatch.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4FB0BA411DC4FAD700EFE98B /* JDMechanicWatch.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		4FB0BA231DC4E08300EFE98B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB0BA061DC4E08300EFE98B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FB0BA0D1DC4E08300EFE98B;
+			remoteInfo = "JDＭechanicWatch";
+		};
+		4FB0BA2E1DC4E08300EFE98B /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 4FB0BA061DC4E08300EFE98B /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 4FB0BA0D1DC4E08300EFE98B;
+			remoteInfo = "JDＭechanicWatch";
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		4F857F611DC70DF6006A9186 /* JDWatchHand.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDWatchHand.swift; sourceTree = "<group>"; };
+		4F857F631DC78C36006A9186 /* JDTimeLogic.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDTimeLogic.swift; sourceTree = "<group>"; };
+		4FB0BA0E1DC4E08300EFE98B /* JDＭechanicWatch.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "JDＭechanicWatch.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB0BA111DC4E08300EFE98B /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		4FB0BA131DC4E08300EFE98B /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		4FB0BA161DC4E08300EFE98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		4FB0BA181DC4E08300EFE98B /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		4FB0BA1B1DC4E08300EFE98B /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		4FB0BA1D1DC4E08300EFE98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB0BA221DC4E08300EFE98B /* JDＭechanicWatchTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JDＭechanicWatchTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB0BA261DC4E08300EFE98B /* JD_echanicWatchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JD_echanicWatchTests.swift; sourceTree = "<group>"; };
+		4FB0BA281DC4E08300EFE98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB0BA2D1DC4E08300EFE98B /* JDＭechanicWatchUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "JDＭechanicWatchUITests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
+		4FB0BA311DC4E08300EFE98B /* JD_echanicWatchUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = JD_echanicWatchUITests.swift; sourceTree = "<group>"; };
+		4FB0BA331DC4E08300EFE98B /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		4FB0BA3F1DC4EDC700EFE98B /* JDClockBackGround.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDClockBackGround.swift; sourceTree = "<group>"; };
+		4FB0BA411DC4FAD700EFE98B /* JDMechanicWatch.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = JDMechanicWatch.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		4FB0BA0B1DC4E08300EFE98B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB0BA1F1DC4E08300EFE98B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB0BA2A1DC4E08300EFE98B /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		4FB0BA051DC4E08300EFE98B = {
+			isa = PBXGroup;
+			children = (
+				4FB0BA101DC4E08300EFE98B /* JDＭechanicWatch */,
+				4FB0BA251DC4E08300EFE98B /* JDＭechanicWatchTests */,
+				4FB0BA301DC4E08300EFE98B /* JDＭechanicWatchUITests */,
+				4FB0BA0F1DC4E08300EFE98B /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		4FB0BA0F1DC4E08300EFE98B /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				4FB0BA0E1DC4E08300EFE98B /* JDＭechanicWatch.app */,
+				4FB0BA221DC4E08300EFE98B /* JDＭechanicWatchTests.xctest */,
+				4FB0BA2D1DC4E08300EFE98B /* JDＭechanicWatchUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		4FB0BA101DC4E08300EFE98B /* JDＭechanicWatch */ = {
+			isa = PBXGroup;
+			children = (
+				4FB0BA111DC4E08300EFE98B /* AppDelegate.swift */,
+				4FB0BA131DC4E08300EFE98B /* ViewController.swift */,
+				4FB0BA3F1DC4EDC700EFE98B /* JDClockBackGround.swift */,
+				4FB0BA411DC4FAD700EFE98B /* JDMechanicWatch.swift */,
+				4F857F611DC70DF6006A9186 /* JDWatchHand.swift */,
+				4FB0BA151DC4E08300EFE98B /* Main.storyboard */,
+				4FB0BA181DC4E08300EFE98B /* Assets.xcassets */,
+				4FB0BA1A1DC4E08300EFE98B /* LaunchScreen.storyboard */,
+				4FB0BA1D1DC4E08300EFE98B /* Info.plist */,
+				4F857F631DC78C36006A9186 /* JDTimeLogic.swift */,
+			);
+			path = "JDＭechanicWatch";
+			sourceTree = "<group>";
+		};
+		4FB0BA251DC4E08300EFE98B /* JDＭechanicWatchTests */ = {
+			isa = PBXGroup;
+			children = (
+				4FB0BA261DC4E08300EFE98B /* JD_echanicWatchTests.swift */,
+				4FB0BA281DC4E08300EFE98B /* Info.plist */,
+			);
+			path = "JDＭechanicWatchTests";
+			sourceTree = "<group>";
+		};
+		4FB0BA301DC4E08300EFE98B /* JDＭechanicWatchUITests */ = {
+			isa = PBXGroup;
+			children = (
+				4FB0BA311DC4E08300EFE98B /* JD_echanicWatchUITests.swift */,
+				4FB0BA331DC4E08300EFE98B /* Info.plist */,
+			);
+			path = "JDＭechanicWatchUITests";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		4FB0BA0D1DC4E08300EFE98B /* JDＭechanicWatch */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB0BA361DC4E08300EFE98B /* Build configuration list for PBXNativeTarget "JDＭechanicWatch" */;
+			buildPhases = (
+				4FB0BA0A1DC4E08300EFE98B /* Sources */,
+				4FB0BA0B1DC4E08300EFE98B /* Frameworks */,
+				4FB0BA0C1DC4E08300EFE98B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = "JDＭechanicWatch";
+			productName = "JDＭechanicWatch";
+			productReference = 4FB0BA0E1DC4E08300EFE98B /* JDＭechanicWatch.app */;
+			productType = "com.apple.product-type.application";
+		};
+		4FB0BA211DC4E08300EFE98B /* JDＭechanicWatchTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB0BA391DC4E08300EFE98B /* Build configuration list for PBXNativeTarget "JDＭechanicWatchTests" */;
+			buildPhases = (
+				4FB0BA1E1DC4E08300EFE98B /* Sources */,
+				4FB0BA1F1DC4E08300EFE98B /* Frameworks */,
+				4FB0BA201DC4E08300EFE98B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FB0BA241DC4E08300EFE98B /* PBXTargetDependency */,
+			);
+			name = "JDＭechanicWatchTests";
+			productName = "JDＭechanicWatchTests";
+			productReference = 4FB0BA221DC4E08300EFE98B /* JDＭechanicWatchTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		4FB0BA2C1DC4E08300EFE98B /* JDＭechanicWatchUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 4FB0BA3C1DC4E08300EFE98B /* Build configuration list for PBXNativeTarget "JDＭechanicWatchUITests" */;
+			buildPhases = (
+				4FB0BA291DC4E08300EFE98B /* Sources */,
+				4FB0BA2A1DC4E08300EFE98B /* Frameworks */,
+				4FB0BA2B1DC4E08300EFE98B /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				4FB0BA2F1DC4E08300EFE98B /* PBXTargetDependency */,
+			);
+			name = "JDＭechanicWatchUITests";
+			productName = "JDＭechanicWatchUITests";
+			productReference = 4FB0BA2D1DC4E08300EFE98B /* JDＭechanicWatchUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		4FB0BA061DC4E08300EFE98B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 0800;
+				LastUpgradeCheck = 0800;
+				ORGANIZATIONNAME = james12345;
+				TargetAttributes = {
+					4FB0BA0D1DC4E08300EFE98B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+					};
+					4FB0BA211DC4E08300EFE98B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FB0BA0D1DC4E08300EFE98B;
+					};
+					4FB0BA2C1DC4E08300EFE98B = {
+						CreatedOnToolsVersion = 8.0;
+						ProvisioningStyle = Automatic;
+						TestTargetID = 4FB0BA0D1DC4E08300EFE98B;
+					};
+				};
+			};
+			buildConfigurationList = 4FB0BA091DC4E08300EFE98B /* Build configuration list for PBXProject "JDＭechanicWatch" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 4FB0BA051DC4E08300EFE98B;
+			productRefGroup = 4FB0BA0F1DC4E08300EFE98B /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				4FB0BA0D1DC4E08300EFE98B /* JDＭechanicWatch */,
+				4FB0BA211DC4E08300EFE98B /* JDＭechanicWatchTests */,
+				4FB0BA2C1DC4E08300EFE98B /* JDＭechanicWatchUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		4FB0BA0C1DC4E08300EFE98B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB0BA1C1DC4E08300EFE98B /* LaunchScreen.storyboard in Resources */,
+				4FB0BA191DC4E08300EFE98B /* Assets.xcassets in Resources */,
+				4FB0BA171DC4E08300EFE98B /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB0BA201DC4E08300EFE98B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB0BA2B1DC4E08300EFE98B /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		4FB0BA0A1DC4E08300EFE98B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4F857F621DC70DF6006A9186 /* JDWatchHand.swift in Sources */,
+				4F857F641DC78C36006A9186 /* JDTimeLogic.swift in Sources */,
+				4FB0BA141DC4E08300EFE98B /* ViewController.swift in Sources */,
+				4FB0BA421DC4FAD700EFE98B /* JDMechanicWatch.swift in Sources */,
+				4FB0BA121DC4E08300EFE98B /* AppDelegate.swift in Sources */,
+				4FB0BA401DC4EDC700EFE98B /* JDClockBackGround.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB0BA1E1DC4E08300EFE98B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB0BA271DC4E08300EFE98B /* JD_echanicWatchTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		4FB0BA291DC4E08300EFE98B /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				4FB0BA321DC4E08300EFE98B /* JD_echanicWatchUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		4FB0BA241DC4E08300EFE98B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FB0BA0D1DC4E08300EFE98B /* JDＭechanicWatch */;
+			targetProxy = 4FB0BA231DC4E08300EFE98B /* PBXContainerItemProxy */;
+		};
+		4FB0BA2F1DC4E08300EFE98B /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 4FB0BA0D1DC4E08300EFE98B /* JDＭechanicWatch */;
+			targetProxy = 4FB0BA2E1DC4E08300EFE98B /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		4FB0BA151DC4E08300EFE98B /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FB0BA161DC4E08300EFE98B /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		4FB0BA1A1DC4E08300EFE98B /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				4FB0BA1B1DC4E08300EFE98B /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		4FB0BA341DC4E08300EFE98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		4FB0BA351DC4E08300EFE98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVES = YES;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4FB0BA371DC4E08300EFE98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JDＭechanicWatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jameskuo12345.JD-echanicWatch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Debug;
+		};
+		4FB0BA381DC4E08300EFE98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = "JDＭechanicWatch/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jameskuo12345.JD-echanicWatch";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+			};
+			name = Release;
+		};
+		4FB0BA3A1DC4E08300EFE98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "JDＭechanicWatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jameskuo12345.JD-echanicWatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDＭechanicWatch.app/JDＭechanicWatch";
+			};
+			name = Debug;
+		};
+		4FB0BA3B1DC4E08300EFE98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				INFOPLIST_FILE = "JDＭechanicWatchTests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jameskuo12345.JD-echanicWatchTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/JDＭechanicWatch.app/JDＭechanicWatch";
+			};
+			name = Release;
+		};
+		4FB0BA3D1DC4E08300EFE98B /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "JDＭechanicWatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jameskuo12345.JD-echanicWatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "JDＭechanicWatch";
+			};
+			name = Debug;
+		};
+		4FB0BA3E1DC4E08300EFE98B /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				INFOPLIST_FILE = "JDＭechanicWatchUITests/Info.plist";
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = "com.jameskuo12345.JD-echanicWatchUITests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 3.0;
+				TEST_TARGET_NAME = "JDＭechanicWatch";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		4FB0BA091DC4E08300EFE98B /* Build configuration list for PBXProject "JDＭechanicWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB0BA341DC4E08300EFE98B /* Debug */,
+				4FB0BA351DC4E08300EFE98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB0BA361DC4E08300EFE98B /* Build configuration list for PBXNativeTarget "JDＭechanicWatch" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB0BA371DC4E08300EFE98B /* Debug */,
+				4FB0BA381DC4E08300EFE98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB0BA391DC4E08300EFE98B /* Build configuration list for PBXNativeTarget "JDＭechanicWatchTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB0BA3A1DC4E08300EFE98B /* Debug */,
+				4FB0BA3B1DC4E08300EFE98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		4FB0BA3C1DC4E08300EFE98B /* Build configuration list for PBXNativeTarget "JDＭechanicWatchUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				4FB0BA3D1DC4E08300EFE98B /* Debug */,
+				4FB0BA3E1DC4E08300EFE98B /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 4FB0BA061DC4E08300EFE98B /* Project object */;
+}
