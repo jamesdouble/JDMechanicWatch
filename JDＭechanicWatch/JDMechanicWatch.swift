@@ -57,6 +57,7 @@ class JDMechanicWatch:UIView {
         {
         //Main Watch with child
         JDMechanicWatch.watchtimeslogic.delegate = watchhandcontroller
+        self.watchface.drawGearBackground()
         }
         else if(!showChildWatch && (!JDMechanicWatch.isChlid) && (childwatch == nil))
         {

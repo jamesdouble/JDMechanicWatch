@@ -79,7 +79,7 @@ class JDTimeLogic{
     
     func timerStart()
     {
-        MainTimer = Timer(timeInterval: 0.1, repeats: true, block: {_ in
+        MainTimer = Timer(timeInterval: 1.0, repeats: true, block: {_ in
             self.secondIncrease()
         })
         RunLoop.main.add(MainTimer, forMode: .defaultRunLoopMode)
