@@ -108,13 +108,14 @@ class JDClockBackGround: UIView {
     var geardegree:Double = 0.0
     func tickingGear()
     {
-        let timer:Timer = Timer(timeInterval: 1.0, repeats: true, block: {_ in
-            self.geardegree += 6.0
-            self.Gearbackground?.transform = CGAffineTransform(rotationAngle: CGFloat(self.geardegree/180 * M_PI))
-        })
+        let timer:Timer = Timer(timeInterval: 1.0, target: self, selector: #selector(self.tickings), userInfo: nil, repeats: true)
         RunLoop.main.add(timer, forMode: .defaultRunLoopMode)
     }
     
+    func tickings(){
+        self.geardegree += 6.0
+        self.Gearbackground?.transform = CGAffineTransform(rotationAngle: CGFloat(self.geardegree/180 * M_PI))
+    }
     
     
     func degree2radian(a:CGFloat)->CGFloat {

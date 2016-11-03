@@ -29,7 +29,7 @@ class JDTimeLogic{
                timerStart()
     }
     
-    func secondIncrease(){
+    @objc func secondIncrease(){
         let secondDegress = 6.0
         let minuteDegress = 0.1
         let hourDegress = 0.1/12.0
@@ -79,9 +79,7 @@ class JDTimeLogic{
     
     func timerStart()
     {
-        MainTimer = Timer(timeInterval: 1.0, repeats: true, block: {_ in
-            self.secondIncrease()
-        })
+        MainTimer = Timer(timeInterval: 1.0, target: self, selector: #selector(self.secondIncrease), userInfo: nil, repeats: true)
         RunLoop.main.add(MainTimer, forMode: .defaultRunLoopMode)
     }
 
