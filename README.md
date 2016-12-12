@@ -13,9 +13,10 @@ Thanks for using.
 p.s. the background is image.
 ***
 #Usage
-
+```Swift
 var MW:JDMechanicWatch = JDMechanicWatch(frame: self.watchView.frame, bgcolor: UIColor.white,GraduationColor: UIColor.black,showchildwatch: true)
 self.view.addSubview(newView!)
+```
 
 `showchildwatch`: Show the small watch on the main watch (BackgroundColor & GraduationColor same as Main Watch).
 
